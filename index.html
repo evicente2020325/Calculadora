@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <div class="primero">
+            <span class="uno"></span>
+            <span class="dos"></span>
+            <span class="tres"></span>
+            <span class="cuatro"></span>
+            <span class="cinco"></span>
+            <span class="seis"></span>
+            <span class="siete"></span>
+        </div>
+        <div class="contenedor">
+            <form action="#" name="formula">
+                <input type="text" name="pregunta">
+                <div class="botones">
+                    <input type="button" value="AC"onclick="formula.pregunta.value = ''">
+                    <input type="button" value="DEL" onclick="formula.pregunta.value = formula.pregunta.value.substr(0, formula.pregunta.value.length -1)">
+                    <input type="button" value="%" onclick="formula.pregunta.value += '%'"> 
+                    <input type="button" value="/" onclick="formula.pregunta.value += '/'"> 
+                </div>
+                <div class="botones">
+                    <input type="button" value="7" onclick="formula.pregunta.value += '7'">
+                    <input type="button" value="8" onclick="formula.pregunta.value += '8'">
+                    <input type="button" value="9" onclick="formula.pregunta.value += '9'">
+                    <input type="button" value="*" onclick="formula.pregunta.value += '*'">
+                </div>
+                <div class="botones">
+                    <input type="button" value="4" onclick="formula.pregunta.value += '4'">
+                    <input type="button" value="5" onclick="formula.pregunta.value += '5'">
+                    <input type="button" value="6" onclick="formula.pregunta.value += '6'">
+                    <input type="button" value="-" onclick="formula.pregunta.value += '-'">
+                </div>
+                <div class="botones">
+                    <input type="button" value="1" onclick="formula.pregunta.value += '1'">
+                    <input type="button" value="2" onclick="formula.pregunta.value += '2'">
+                    <input type="button" value="3" onclick="formula.pregunta.value += '3'">
+                    <input type="button" value="+" onclick="formula.pregunta.value += '+'">
+                </div>
+                <div class="botones">
+                    <input type="button" value="0" onclick="formula.pregunta.value += '0'">
+                    <input type="button" value="00" onclick="formula.pregunta.value += '00'">
+                    <input type="button" value="." onclick="formula.pregunta.value += '.'">
+                    <input type="button" value="=" onclick="formula.pregunta.value = eval(formula.pregunta.value)">
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>
